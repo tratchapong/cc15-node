@@ -1,0 +1,2 @@
+exports.random = () => Math.random()
+
