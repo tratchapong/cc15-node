@@ -22,7 +22,7 @@ const fs = require('fs/promises')
 
 async function run() {
     try {
-        let rs_obj =  JSON.parse(await fs.readFile('./inpu.json','utf8'))
+        let rs_obj =  JSON.parse(await fs.readFile('./input.json','utf8'))
         rs_obj.sum = rs_obj.x + rs_obj.y
         await fs.writeFile('./output.json', JSON.stringify(rs_obj))
     }catch(err) {
